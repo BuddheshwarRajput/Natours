@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+:root {
+    --main-color: #8e44ad;
+    --black: #222;
+    --white: #f7faf6;
+    --light-black: #777;
+    --light-black: #fff9;
+    --dark-bg: rgba(0, 0, 0, .1);
+    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+    --light-bg: #eee;
+    --border: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+html::-webkit-scrollbar--track {
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+
+
+
+section {
+    padding: 5rem 10%;
+}
+.btn{
+    display: inline-block;
+    background: var(--black);
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background:var(--main-color) ;
+}
+
+.heading-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+
+.header {
+    /* font-family: 'Poppins', sans-serif; */
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding-top: 2rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+}
+/* .header .natours1{
+    padding: 3rem 2rem;
+    text-align: center;
+    cursor: pointer;
+
+  } */
+
+
+
+/* .header .logo1 .icon1 h1{
+    color: white;
+    font-size: 1.7rem;
+    padding-top:1rem ;
+} */
+
+/* .logo1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    gap: 1.5rem;
+} */
+
+/* .icon1{
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+  } */
+
+.logo1 {
+    width: 40px; /* Adjust the width and height as per your desired size */
+    height: 40px;
+    background-color: #d1f5f7; /* Set the background color for the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.icon1 {
+    width: 24px; /* Adjust the image size within the box */
+    height: 24px;
+  }
+  
+
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--black)
+}
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    display: none;
+}
+.home{
+    padding: 0;
+}
+.home .slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position:center !important ;
+    min-height: 60rem;
+
+}
+.home .slide .content{
+    width: 85rem;
+
+}
+.home .slide .content span{
+    display: block;
+    font-size: 2.2rem;
+    color: var(--light-bg);
+    padding-bottom:1rem ;
+}
+.home .slide .content h3{
+    font-size: 6vw;
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: var(--text-shadow);
+    padding: 1rem 0;
+}
+
+
+
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    gap: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--main-color);
+    cursor: pointer;
+    /* width: 9rem;
+    height: 40px;
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  
+.icon {
+    width: 30px; 
+    height: 30px;
+  }
+.services .box-container .box:hover{
+    background: var(--black);
+}
+/* .services .box-container .box img{
+    height:rem;
+} */
+.services .box-container .box h3{
+    color: white;
+    font-size: 1.7rem;
+    padding-top:1rem ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background: url(images/jeremy-bishop-G9i_plbfDgk-unsplash.jpg) no-repeat;
+    background-color: rgba(194, 138, 138, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap:3rem;
+}
+.footer .box-container .box h3{
+    color: var(--white);
+    font-size: 2.5rem;
+    padding: bottom 2rem;;
+}
+.footer .box-container .box a{
+    color: var(--light-bg);
+    font-size: 1.5rem;
+    padding-bottom :1.5srem;
+    display: block;
+}
+.footer .box-container .box a i{
+    color:var(--main-color);
+    padding-right: .5rem;
+    transition: 0.2s linear;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+.footer .credit{
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: .1rem solid var(--light-bg);
+    font-size: 2rem;
+    color: var(--white);
+
+}
+.footer .credit span{
+    color: rgb(186, 136, 219);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px) {
+
+    
+
+    section {
+        padding: 3rem 5%
+    }
+}
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    section {
+
+        padding: 3rem 2rem
+    }
+}
+
+@media(max-width:768px) {
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+    .header .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        background-color: var(--white);
+        border-top: var(--border) ;
+        padding: 2rem;
+        transition:.1s linear ;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .heading-title{
+        font-size: 3rem ;
+    }
+
+
+}
